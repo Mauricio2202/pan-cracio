@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+.principal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Pattaya", sans-serif;
+}
+
+.slogan {
+    position: relative;
+    top: -200px;
+    font-size: 25px;
+    color: #DDD;
+    text-align: center;
+    left: 140px;
+    font-family: "Pattaya", sans-serif;
+}
+
+.video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    animation: zoomIn 3s ease-in-out;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 5em;
+}
+
+h1::selection {
+    background-color: #f72585;
+    color: #FFF;
+}
+
+h1:hover {
+    text-shadow: 0 0 5px #FFF;
+    transition: 0.5s ease-in-out;
+}
+
+.logo {
+    width: 500px;
+    border-radius: 50%;
+    margin: 20px;
+    margin-right: 50px;
+}
+
+.logo:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.shopCart {
+    width: 20px;
+}
+
+.arrow {
+    width: 50px;
+    position: absolute;
+    top: 550px;
+    cursor: pointer;
+    animation: flotar 2s linear infinite;
+    scroll-behavior: smooth;
+}
+
+.arrow:hover {
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+#arrow {
+    width: 50px;
+}
+
+.qr {
+    margin: 10px;
+}
+
+.principal {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.ofertas {
+    animation: slideInUp 2s ease;
+}
+
+.productos_cafes .cafe__p {
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slideInUp 2s ease;
+}
+
+@keyframes flotar {
+    0% {
+        position: absolute;
+        top: 550px;
+    }
+    50% {
+        position: absolute;
+        top: 580px;
+    }
+    100% {
+        position: absolute;
+        top: 550px;
+    }
+}
+
+.barra-navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-out;
+}
+
+.barra-navegacion a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #6B4226;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.barra-navegacion a:hover {
+    background-color: #FAD0C5;
+    color: #9A2E2E;
+}
+
+.secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #3b413c;
+    text-align: center;
+    width: 100%;
+}
+
+.secciones div {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFDAB9;
+    width: 80%;
+    max-width: 800px;
+}
+
+.secciones h1 {
+    font-size: 2.5em;
+    color: #9A2E2E;
+    margin-bottom: 15px;
+    animation: slideInLeft 1.5s ease;
+}
+
+.secciones h1:hover {
+    text-shadow: 0 0 5px #F28D8D;
+    transition: 0.3s ease-in-out;
+}
+
+.secciones img {
+    width: 100%;
+    max-width: 300px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.secciones img:hover {
+    transform: scale(1.05);
+}
+
+.secciones p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #ef476f;
+}
+
+/* Cafés */
+
+.productos_cafes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    animation: slideInUp 2s ease;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.cafe__p {
+    border: 1px solid #DDD;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 8px;
+}
+
+.cafe__1 {
+    width: 250px;
+    height: 280px;
+    border-radius: 5px;
+}
+
+.cafe__1:hover {
+    transition: 0.4s;
+    transform: scale(1.07);
+}
+
+.galleta, .negro, .rojo, .caramelo {
+    height: 250px;
+}
+
+.cafeTitle {
+    color: #000;
+    text-align: center;
+    width: 100%;
+}
+
+.heart__icon {
+    width: 20px;
+    margin: 5px;
+    position: relative;
+    top: -5px;
+}
+
+.priceCafe {
+    background: #a01a58;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.btnBuy {
+    margin: 10px;
+    padding: 10px;
+    width: 130px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 7px;
+    border: none;
+}
+
+.btnBuy:hover {
+    transition: 0.3s ease;
+    background: #f72585;
+    color: #DDD;
+}
+
+.productos-destacados {
+    background-color: #FFF7E6;
+    text-align: center;
+    padding: 40px 20px;
+    animation: slideInUp 2s ease;
+}
+
+.productos-destacados h1 {
+    font-size: 2.5em;
+    color: #9A2E2E;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.galeria-productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: none;
+}
+
+.mision, .vision {
+    animation: slideInUp 2s ease;
+}
+
+.producto {
+    animation: slideInUp 2s ease;
+    background-color: #FFDAB9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.producto h2 {
+    color: #6B4226;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    color: #6B4226;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.price {
+    background: #70e000;
+    padding: 9px;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.contacto {
+    background-color:  #000011;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contacto h1 {
+    font-size: 2.5em;
+    color: #9A2E2E;
+    margin-bottom: 30px;
+}
+
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto input, .contacto textarea, .contacto button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    outline: none;
+}
+
+.contacto input, .contacto textarea {
+    background-color: #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacto button {
+    background-color: #E5383B;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: #F25C54;
+}
+
+.ofertas {
+    background-color: #FFF7E6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.ofertas h1 {
+    font-size: 2.5em;
+    color: #9A2E2E;
+    margin-bottom: 20px;
+}
+
+.ofertas p {
+    font-size: 1.2em;
+    color: #6B4226;
+    margin-bottom: 20px;
+}
+
+.ofertas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ofertas li {
+    background-color: #FFDAB9;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    font-size: 1.2em;
+    color: #6B4226;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    animation: slideInUp 2s ease;
+}
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    transform: perspective(700);
+    transform-style: preserve-3d;
+}
+
+.social {
+    margin: 20px;
+    width: 50px;
+    margin-left: 50px;
+}
+
+.social:hover {
+    transition: 0.5s;
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+
+.menu {
+    width: 20px;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .principal {
+        height: 500px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        font-style: italic;
+        text-align: center;
+        margin: 10px 0;
+        word-wrap: break-word;
+    }
+
+    .slogan {
+        width: 150px;
+        font-size: 17px;
+        font-style: italic;
+        position: absolute;
+        top: 400px;
+        left: 120px;
+    }
+
+    .logo {
+        width: 100px;
+        margin: 10px auto;
+        display: block;
+        order: 0;
+    }
+
+    .arrow {
+        top: auto;
+        margin-top: 20px;
+    }
+
+    .barra-navegacion {
+        justify-content: space-between;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .barra-navegacion a {
+        display: none;
+    }
+
+    .barra-navegacion .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .video-fondo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .secciones div {
+        width: 90%;
+    }
+
+    .secciones h1 {
+        font-size: 2em;
+        font-style: italic;
+    }
+
+    .secciones img {
+        max-width: 100%;
+    }
+
+    .productos_cafes {
+        flex-direction: column;
+    }
+
+    .productos-destacados h1,
+    .contacto h1,
+    .ofertas h1 {
+        font-size: 2em;
+        font-style: italic;
+    }
+
+    .productos-destacados,
+    .contacto,
+    .ofertas {
+        padding: 20px;
+    }
+
+    .galeria-productos,
+    .producto,
+    .contacto form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%;
+    }
+
+    .cafe__p,
+    .producto img {
+        width: 100%;
+    }
+
+    .cafe__1 {
+        height: auto;
+        width: 100%;
+        max-width: none;
+    }
+
+    .heart__icon {
+        top: 0;
+    }
+
+    .contacto form,
+    .contacto input,
+    .contacto textarea,
+    .contacto button {
+        width: 100%;
+    }
+
+    .secciones p {
+        font-size: 1em;
+    }
+
+    .ofertas ul,
+    .ofertas li {
+        width: 90%;
+    }
+}
+
+/* Estilo para el menú desplegable */
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('./img/menu.jpeg') no-repeat center;
+        background-size: contain;
+    }
+
+    .barra-navegacion.active a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .barra-navegacion.active {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

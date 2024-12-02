@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pan-cracio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="icon" href="./img/logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Doto:wght@100..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Doto:wght@100..900&family=Pattaya&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="barra-navegacion" id="barra">
+        <img src="./img/menu.png" alt="menu" class="menu">
+        <a href="#principal">Inicio</a>
+        <a href="#mision">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="cart.html"><img src="./img/shoppingCart.png" alt="shopping" class="shopCart"></a>
+    </nav>
+    </header>
+
+    <div class="principal" id="nosotros">
+        <video autoplay muted loop playsinline class="video-fondo">
+            <source src="./img/video-fondo.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <img src="./img/logo.png" alt="logo" class="logo">
+        <h1>"Cuando el café es fuerte y el pan es suave, la vida es mejor."</h1>
+    <a href="#mision" class="arrow">
+            <img src="./img/arrow-bottom.png" alt="arrow" id="arrow">
+        </a>
+    </div>
+    <p class="slogan">En la arena del pan con café, cada bocado es una caída con sabor. </p>
+    <section class="secciones">
+        <div class="mision" id="mision">
+            <h1>Misión</h1>
+            <img src="./img/mision.png" alt="Mesa con pan artesanal y café">
+            <p>Ofrecer un producto de calidad a un costo accesible en función del mercado que permita crecer y ser adaptable sin dejar atrás el origen esencial del café y pan.</p>
+        </div>
+        <div class="vision">
+            <h1>Visión</h1>
+            <img src="./img/vision.png" alt="Panadería acogedora con clientes">
+            <p>Ser una panadería reconocida por su calidad y precio, creciendo constantemente y siendo la opción preferida en cada comunidad.</p>
+        </div>
+    </section>
+    <section class="ofertas" id="ofertas">
+        <h1>Ofertas del Día</h1>
+        <p>¡No te pierdas nuestras promociones diarias en productos seleccionados!</p>
+        <ul>
+            <li>Conchas de vainilla 2x1</li>
+            <li>20% de descuento en baguettes</li>
+            <li>Paquete familiar: 1 barra de pan + 4 conchas + 2 cuernitos por $160</li>
+        </ul>
+    </section>
+    <!-- PRIMERA PARTE CAFÉS -->
+    <h1 class="cafeTitle" id="menu">Café Caliente</h1>
+
+    <article class="productos_cafes">
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/cappuccino.png" alt="cappuccino" class="cafe__1">
+            <h3>CAPPACINO</h3>
+            <span class="priceCafe">$50</span>
+            <button class="btnBuy" data-product="CAPPACINO" data-price="50" data-image="./img/cappuccino.png">Comprar</button>
+        </div>
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/moccha.png" alt="mocha" class="cafe__1">
+            <h3>MOKA</h3>
+            <span class="priceCafe">$55</span>
+            <button class="btnBuy" data-product="MOKA" data-price="55" data-image="./img/moccha.png">Comprar</button>
+        </div>
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/frapuccino.png" alt="frapuccino" class="cafe__1">
+            <h3>FRAPPACCINO</h3>
+            <span class="priceCafe">$35</span>
+            <button class="btnBuy" data-product="FRAPPACCINO" data-price="35" data-image="./img/frapuccino.png">Comprar</button>
+        </div>
+
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/expresio.png" alt="expreso" class="cafe__1">
+            <h3>EXPRESO</h3>
+            <span class="priceCafe">$50</span>
+            <button class="btnBuy" data-product="EXPRESO" data-price="50" data-image="./img/expresio.png">Comprar</button>
+        </div>
+    </article>
+
+    <!-- SEGUNDA PARTE CAFÉS -->
+    <h1 class="cafeTitle">Café Frío</h1>
+    <article class="productos_cafes">
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/fGalleta.png" alt="cappuccino" class="cafe__1 galleta">
+            <h3>FRAPPE DE GALLETA</h3>
+            <span class="priceCafe">$65</span>
+            <button class="btnBuy" data-product="FRAPPE DE GALLETA" data-price="65" data-image="./img/fGalleta.png">Comprar</button>
+        </div>
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/fCajeta.png" alt="cajeta" class="cafe__1">
+            <h3>FRAPPE DE CAJETA</h3>
+            <span class="priceCafe">$70</span>
+            <button class="btnBuy" data-product="FRAPPE DE CAJETA" data-price="70" data-image="./img/fCajeta.png">Comprar</button>
+        </div>
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/fCaramelo.png" alt="caramelo" class="cafe__1 caramelo">
+            <h3>FRAPPE DE CARAMELO</h3>
+            <span class="priceCafe">$65</span>
+            <button class="btnBuy" data-product="FRAPPE DE CARAMELO" data-price="65" data-image="./img/fCaramelo.png">Comprar</button>
+        </div>
+
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/fMatcha.png" alt="matcha" class="cafe__1">
+            <h3>FRAPPE DE MATCHA</h3>
+            <span class="priceCafe">$70</span>
+            <button class="btnBuy" data-product="FRAPPE DE MATCHA" data-price="70" data-image="./img/fMatcha.png">Comprar</button>
+        </div>
+    </article>
+
+    <!-- TERCERA PARTE TÉ´S -->
+
+    <h1 class="cafeTitle">Tés Calientes</h1>
+    <article class="productos_cafes">
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/tVerde.png" alt="Té Verde" class="cafe__1 galleta">
+            <h3>TÉ VERDE</h3>
+            <span class="priceCafe">$35</span>
+            <button class="btnBuy" data-product="TÉ VERDE" data-price="35" data-image="./img/tVerde.png">Comprar</button>
+        </div>
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/tNegro.png" alt="Té Negro" class="cafe__1 negro">
+            <h3>TÉ NEGRO</h3>
+            <span class="priceCafe">$30</span>
+            <button class="btnBuy" data-product="TÉ NEGRO" data-price="30" data-image="./img/tNegro.png">Comprar</button>
+        </div>
+        <div class="cafe__p">
+            <img src="./img/heart.svg" alt="heart" class="heart__icon">
+            <img src="./img/tRojo.png" alt="Té Rojo" class="cafe__1 rojo">
+            <h3>TÉ ROJO</h3>
+            <span class="priceCafe">$40</span>
+            <button class="btnBuy" data-product="TÉ ROJO" data-price="40" data-image="./img/tRojo.png">Comprar</button>
+        </div>
+    </article>
+
+    <section class="productos-destacados" id="productos">
+        <h1>Productos Destacados</h1>
+        <div class="galeria-productos">
+            <div class="producto">
+                <img src="./img/concha.png" alt="Concha tradicional" class="concha">
+                <h2>Concha Tradicional</h2>
+                <p>Pan dulce suave y esponjoso, con cobertura de azúcar.</p>
+                <p class="price">Precio: <span>$25</span></p>
+            </div>
+            <div class="producto">
+                <img src="./img/cuerno.png" alt="Cuerno de mantequilla">
+                <h2>Cuerno de Mantequilla</h2>
+                <p>Pan hojaldrado con un toque de mantequilla natural.</p>
+                <p class="price">Precio: <span>$30</span></p>
+
+            </div>
+            <div class="producto">
+                <img src="./img/oreja.png" alt="Oreja de hojaldre">
+                <h2>Oreja de Hojaldre</h2>
+                <p>Pan crujiente con azúcar caramelizada.</p>
+                <p class="price">Precio: <span>$35</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h1>Contáctanos</h1>
+        <form action="https://wa.link/0wbu93" method="get">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <button type="submit">Enviar mensaje por WhatsApp</button>
+        </form><br>
+        <h1>O rastrea el siguiente QR</h1>
+        <img src="./img/qr_whatsapp.png" alt="qr" class="qr">
+    </section>
+
+    
+    <footer class="redes-sociales">
+        <h2>Síguenos en nuestras redes sociales</h2>
+        <div class="iconos-redes">
+            <a href="https://www.facebook.com/profile.php?id=61569147105208" target="_blank">
+                <img src="./img/facebook.png" alt="Facebook" class="social">
+            </a>
+
+            <a href="https://www.instagram.com/pancracio1575/" target="_blank">
+                <img src="./img/instagram.png" alt="Instagram" class="social">
+            </a>
+
+            <a href="https://www.tiktok.com/@pancracio187?_t=8rqDhv0R5ei&_r=1" target="_blank">
+                <img src="./img/tik-tok.png" alt="Instagram" class="social">
+            </a>
+
+            <a href="https://x.com/Pancracio1733" target="_blank">
+                <img src="./img/x.png" alt="Instagram" class="social">
+            </a>
+        </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

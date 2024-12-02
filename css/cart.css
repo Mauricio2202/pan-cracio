@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Para posicionar el botón regresar */
+}
+
+#product-info {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px; /* Acomodar el div para dejar espacio al botón */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+p {
+    color: #777;
+    margin-bottom: 10px; /* Espacio debajo del párrafo */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, opacity 0.3s; /* Transiciones suaves */
+}
+
+.payButton {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.backButton {
+    background-color: #007bff;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+}
+
+.payButton:hover, .deleteButton:hover, .backButton:hover {
+    background-color: darken(#28a745, 10%); /* Ajuste del color al pasar el mouse */
+    opacity: 0.8;
+}
+
+img {
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #product-info {
+        margin-top: 70px; 
+        padding: 15px;
+    }
+
+    img {
+        width: 20px;
+        height: 200px;
+    }
+
+    .backButton {
+        padding: 8px 16px;
+    }
+}
